@@ -118,31 +118,6 @@ ORDER BY
 
 
 
------convert paymentdate to date datatype
-SELECT * 
- INTO working_table IF NOT EXISTS
-FROM  payments
-
-SELECT *  FROM  working_table
-
-
--- we can use str to date to update this field
-
-
---SELECT
-	
---	CONCAT(yeear, ' - ',  moonth , '-', daay) as payment_date
---FROM
---(	SELECT 
-	
---	SUBSTRING(paymentDate, 1, 4) AS yeear,
---	SUBSTRING(paymentDate, 6, 2) AS moonth,
---	SUBSTRING(paymentDate, 9, 2) AS daay
-
---	FROM working_table
---) as con_date
-
-
 ALTER TABLE payments
 ALTER COLUMN paymentDate char(10) NOT NULL
 
