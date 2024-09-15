@@ -1,6 +1,6 @@
 # Pricable-Analysis
 
-### Analysed data store data to understand sales on product categories and patterns
+### Analysed data store data to understand sales on product categories and identify patterns
 
 ### Data Cleaning
 - Checked data for duplicates
